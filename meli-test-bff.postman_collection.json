@@ -1,0 +1,76 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Meli Test BFF",
+		"_postman_id": "e059304e-1ecb-6eee-87b1-29e0cb1be58c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Currencies",
+			"description": "",
+			"item": [
+				{
+					"name": "GET Currencies",
+					"request": {
+						"url": "http://localhost:8050/api/currencies",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Items",
+			"description": "",
+			"item": [
+				{
+					"name": "GET Items",
+					"request": {
+						"url": {
+							"raw": "http://localhost:8050/api/items?q=Apple ipod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"api",
+								"items"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Apple ipod",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET Item",
+					"request": {
+						"url": "http://localhost:8050/api/items/MLA747981872",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
