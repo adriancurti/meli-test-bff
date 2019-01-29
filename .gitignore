@@ -74,8 +74,4 @@ typings/
 .env.test
 .env.prod
 
-# deploy
-ecosystem.config.js
-Procfile
-
 # End of https://www.gitignore.io/api/node
